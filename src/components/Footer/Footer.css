@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Nunito:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+.container {
+	margin: 0 20px;
+	background-color: rgb(248, 248, 248);
+}
+.subscribe {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: aliceblue;
+	border-radius: 3px;
+}
+.subscribe_text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.subscribe .subscribe_text p:nth-of-type(1) {
+	font-family: poppins;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: #55575a;
+}
+.subscribe .subscribe_text p:nth-last-child(1) {
+	font-family: poppins;
+	color: #1d9c82;
+	text-transform: uppercase;
+	font-weight: 300;
+	word-spacing: 1px;
+}
+.subscribe .subscribe_input {
+	width: 250px;
+	padding: 12px;
+	margin: 0 15px;
+	color: #33363b;
+	font-family: open sans;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border: 2px solid #1d9c82;
+	border-radius: 3px;
+	outline: none;
+}
+::placeholder {
+	color: darkgrey;
+	text-transform: uppercase;
+}
+.subscribe button {
+	padding: 13px 25px;
+	border: 2px solid #1d9c82;
+	background-color: transparent;
+	border-radius: 3px;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-weight: 1000;
+	color: #1d9c82;
+	outline: none;
+	letter-spacing: 1px;
+	transition: background-color 0.3s ease;
+}
+.subscribe button:hover {
+	background-color: #1d9c82;
+	color: white;
+}
+.summary {
+	display: flex;
+	/* justify-content: space-around; */
+	padding: 50px 35px;
+	/* text-align: center; */
+}
+.summary .summary_detail {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.summary .summary_img {
+	width: 95%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../../assests/images/footer/delivery-img.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #aaaaaa;
+}
+.summary .summary_img_2 {
+	width: 95%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../../assests/images/footer/showcase.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #aaaaaa;
+}
+.summary .summary_text {
+	margin: 0;
+	position: absolute;
+	bottom: 30%;
+	/* left: 21%; */
+	/* transform: translate(-50%, -50%); */
+	color: rgb(230, 230, 230);
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+}
+.summary .summary_detail .summary_h1 {
+	font-size: 3rem;
+}
+.summary .summary_detail .summary_h4 {
+	font-size: 1rem;
+}
+.summary .summary_text_2 {
+	position: absolute;
+	bottom: 30%;
+	color: rgb(230, 230, 230);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+.blog_main {
+	padding: 0 50px 25px 50px;
+	text-align: center;
+}
+.blog_text {
+	/* padding: 10px 25px; */
+	margin: 0 0 25px 0;
+	font-family: Montserrat;
+	font-size: 2rem;
+	color: rgb(29, 156, 130);
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.blog_main .blog_div {
+	display: flex;
+	justify-content: space-around;
+	padding: 22px 15px 0;
+}
+.blog_main .blog_img {
+	display: flex;
+}
+.blog_main .blog_div_img {
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #aaaaaa;
+}
+.blog_main .blog_comment {
+	text-align: start;
+	margin: 0 25px;
+}
+.blog_main .blog_comment p {
+	font-size: 0.6rem;
+	font-family: Open Sans;
+}
+.blog_main .blog_comment p:nth-of-type(1) {
+	font-size: 1rem;
+	font-weight: 1000;
+	color: rgb(90, 90, 90);
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	/* padding-top: 3px; */
+	letter-spacing: 1px;
+}
+.blog_main .blog_comment p:nth-of-type(2) {
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+	color: #6e6e6e;
+	font-weight: 600;
+}
+.blog_main .blog_comment p:nth-of-type(3) {
+	text-transform: capitalize;
+	padding-top: 10px;
+	font-family: QuickSand;
+	letter-spacing: 1px;
+	color: #6e6e6e;
+	font-weight: 600;
+}
+.blog_main .blog_comment p:nth-last-child(1) {
+	text-transform: capitalize;
+	padding-top: 8px;
+	font-family: QuickSand;
+	letter-spacing: 1px;
+	color: #6e6e6e;
+	font-weight: 600;
+}
+.connect_us {
+	margin-top: 25px;
+	padding: 0 50px 35px 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+.connect_us h4 {
+	display: inline-block;
+	font-family: Open Sans;
+	font-weight: 1000;
+	color: #585555;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #1d9c82;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.connect_us h6 {
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	font-family: Montserrat;
+	margin: 20px 0 10px;
+	color: #33363b;
+}
+.connect_us .sales {
+	margin-right: 10px;
+}
+.connect_us .sales h6 {
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	font-family: Montserrat;
+	margin: 0 0 5px;
+	text-transform: uppercase;
+	color: #383a3f;
+	font-weight: bold;
+}
+.connect_us .sales span {
+	font-size: 0.8rem;
+	font-family: Nunito;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.connect_us p {
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	font-family: Montserrat;
+	margin-bottom: 10px;
+}
+.connect_us .connect_us_link {
+	margin-top: 25px;
+}
+.connect_us .connect_us_link img {
+	height: 20px;
+	/* padding: 5px; */
+	margin-right: 15px;
+	border-radius: 50%;
+	transition: 0.2s ease;
+}
+.connect_us .connect_us_link a img:hover {
+	box-shadow: 0px 1px 6px #7d7d7d, 0px -1px 6px #7d7d7d;
+}
+.sales_detail {
+	display: flex;
+}
+.sales_detail .sales_offer {
+	padding: 15px;
+	margin-top: 10px;
+}
+.sales_detail .sales_img {
+	height: 70px;
+	width: 70px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+.sales_detail .linethrough {
+	text-decoration: line-through;
+	margin-right: 5px;
+	font-size: 0.4rem !important;
+}
+.support ul {
+	margin-top: 15px;
+	padding-left: 0;
+}
+.support ul a {
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+.support ul a li {
+	margin-bottom: 5px;
+	font-family: Nunito;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #7d7d7d;
+}
+.support ul a li:hover {
+	color: #1d9c82;
+}
+.payment_cards {
+	text-align: center;
+	padding: 0 50px;
+	margin-top: 25px;
+}
+.payment_cards img {
+	height: 35px;
+	width: 35px;
+	margin: 0 5px;
+}
+.payment_cards img:nth-last-child(1) {
+	margin: 0;
+}
+.support {
+	width: 300px;
+}
+@media (max-width: 850px) {
+	.subscribe {
+		flex-flow: column wrap;
+		align-items: center;
+		padding: 20px 5px;
+	}
+	.subscribe_text {
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	.subscribe button {
+		margin-top: 15px;
+	}
+	.blog_main {
+		padding: 0;
+	}
+	.blog_main .blog_div {
+		flex-flow: column wrap;
+	}
+	.blog_main .blog_img {
+		flex-flow: column wrap;
+		margin-bottom: 25px;
+	}
+	.blog_main .blog_div_img {
+		height: 150px;
+		width: 100%;
+	}
+	.blog_main .blog_comment {
+		text-align: start;
+		margin: 5px 0 0 0;
+	}
+	.subscribe button {
+		width: 280px;
+		padding: 13px 10px;
+	}
+	.subscribe .subscribe_input {
+		text-align: center;
+	}
+}
+
+@media (max-width: 596px) {
+	.container {
+		margin: 0 10px;
+	}
+	.connect_us {
+		padding: 0 10px 10px 10px;
+		/* max-width: fit-content; */
+		margin-top: 0;
+		flex-flow: column wrap;
+	}
+	.connect_us .connect_us_div {
+		margin-bottom: 25px;
+	}
+	.connect_us .sales {
+		margin-bottom: 25px;
+	}
+	.payment_cards img {
+		height: 25px;
+		width: 25px;
+		margin: 0 5px;
+	}
+	.summary {
+		flex-flow: column wrap;
+		padding: 10px;
+	}
+	.summary .summary_detail {
+		margin: 25px 0;
+	}
+	.subscribe .subscribe_input {
+		width: 250px;
+	}
+}
+@media (max-width: 356px) {
+	.subscribe .subscribe_text p:nth-of-type(1) {
+		font-size: 0.6rem;
+	}
+	.subscribe .subscribe_text p:nth-last-child(1) {
+		font-size: 0.55rem;
+	}
+	.subscribe .subscribe_input {
+		width: 150px;
+	}
+	.subscribe button {
+		width: 180px;
+	}
+	.connect_us p {
+		font-size: 0.65rem;
+	}
+	.sales_detail .sales_offer h6 {
+		font-size: 0.5rem;
+	}
+	::placeholder {
+		font-size: 0.7rem;
+		padding-top: 10px;
+	}
+}

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Nunito:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;400;500&display=swap");
+.container {
+	/* background-color: rgb(221, 221, 221); */
+	background-color: rgb(250, 250, 250);
+	margin: 0 20px;
+	/* display: flex; */
+}
+.lang {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 5px;
+	background-color: white;
+	/* margin: 0 150px; */
+}
+.lang a {
+	font-family: "Quicksand";
+	text-decoration: none;
+	color: rgb(129, 129, 129);
+	transition: 0.3s all ease;
+	font-weight: 500;
+	padding: 0 5px;
+	font-size: 0.8rem;
+}
+.lang a:nth-of-type(1) {
+	color: black;
+	font-weight: bold;
+}
+.lang a:hover,
+.mid_section a:hover {
+	color: #1d9c82;
+}
+.mid_section {
+	font-family: "nunito";
+	border-radius: 5px;
+	font-size: 0.85rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+	letter-spacing: 1px;
+}
+.mid_section div {
+	padding: 15px 0;
+	margin: 0 5px;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	text-transform: uppercase;
+}
+.mid_section .mid {
+	display: flex;
+	align-items: flex-start;
+	flex-flow: column wrap;
+}
+.mid_section img {
+	object-fit: contain;
+	height: 20px;
+	margin: 0 5px 0 0;
+}
+.mid_section a {
+	color: black;
+	text-decoration: none;
+	transition: 0.2s all ease;
+	margin: 0 7px;
+}
+.mid .main_search {
+	/* width: 100%; */
+	position: relative;
+}
+.mid .search {
+	width: 260px;
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: 2px;
+	border: 1px solid #1d9c82;
+	background-color: transparent;
+	outline: none;
+	font-family: poppins;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.mid .search_img {
+	position: absolute;
+	right: 5%;
+	filter: contrast(0);
+	transition: filter 0.3s ease;
+}
+.mid .search_img:hover {
+	filter: contrast(1);
+}
+nav {
+	border-bottom: 5px solid #1d9c82;
+}
+nav .navbar {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 25px 0;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-family: poppins;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+	flex-flow: row wrap;
+}
+nav .navbar li {
+	transition: color 0.3s ease;
+	cursor: pointer;
+}
+nav .navbar li:hover {
+	color: #1d9c82;
+}
+.header_img {
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+.header_img .header_img_src {
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../../assests/images/header/banner-img.jpg);
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+}
+.header_img_text {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.header_img_text .header_img_p1 {
+	font-size: 3rem;
+	color: white;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+.header_img_text .header_img_p2 {
+	font-size: 3rem;
+	color: white;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 18px;
+}
+.brand_logo {
+	height: 120px;
+	width: 150px;
+	background-color: skyblue;
+	cursor: pointer;
+	transform: rotate(45deg);
+	background-color: #1d9c82;
+}
+.brand_logo .brand_logo_text {
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: "Quicksand", sans-serif;
+	transform: rotate(-45deg);
+	color: white;
+}
+@media (max-width: 960px) {
+	.brand_logo_container,
+	.brand_logo {
+		display: none !important;
+	}
+	.mid_section div {
+		padding: 10px 0 0 0;
+	}
+}
+@media (max-width: 763px) {
+	.header_img_text .header_img_p1 {
+		font-size: 2rem;
+		letter-spacing: 2px;
+	}
+	.header_img_text .header_img_p2 {
+		font-size: 2rem;
+		letter-spacing: 10px;
+	}
+	.header_img .header_img_src {
+		min-height: 300px;
+		margin-top: 25px;
+		border-top: 5px solid #1d9c82;
+	}
+	nav {
+		display: none;
+	}
+}
+@media (max-width: 699px) {
+	.mid_section div {
+		margin: 1px auto;
+		padding: 5px 0 0 0;
+	}
+}
+@media (max-width: 596px) {
+	.container {
+		margin: 0 10px;
+	}
+}
+@media (max-width: 356px) {
+	.header_img_text .header_img_p1 {
+		font-size: 1.3rem;
+		letter-spacing: 3px;
+	}
+	.header_img_text .header_img_p2 {
+		font-size: 1.3rem;
+		letter-spacing: 9px;
+	}
+}
